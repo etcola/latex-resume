@@ -4,14 +4,6 @@
 
 \documentclass[a4paper,11pt]{article} % fonte 11 points, papier a4
 
-\usepackage[francais]{babel}    % faire du franais
-\usepackage[utf8]{inputenc}   % accents dans le source
-\usepackage[T1]{fontenc}        % accents dans le DVI
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{layout}
-
-
 %#########
 % Commande pour français/anglais,
 % changer le #2 pour changer la langue
@@ -19,6 +11,17 @@
 % #2 = francais
 \newcommand{\trad}[2]{#1}
 %#########
+
+\trad{
+	\usepackage[english]{babel}
+}{
+	\usepackage[francais]{babel}    % faire du français
+}
+\usepackage[utf8]{inputenc}   % accents dans le source
+\usepackage[T1]{fontenc}        % accents dans le DVI
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{layout}
 
 %#########
 % La page
@@ -116,13 +119,13 @@
 \begin{tabular}{cp{0.8\textwidth}}
 
 
-\textbf{2006-2009}  & \trad{Student at the \textit{\'Ecole Centrale de Lyon}, a French college of general engineering.}
+\textbf{2006-2009}  & \trad{Student at the \textit{\'Ecole Centrale Lyon}, a French college of general engineering.}
                         {\'Elève-ingénieur à l'\textit{\'Ecole Centrale de Lyon}.} \\
                     & \trad{Third year option: Informatics and Communication}
                         {Option de troisième année : Informatique et Communication, spécialité Multimédia}\\
 
 \espace
-\textbf{2004-2006}  & \trad{\textit{Classes préparatoires} of Mathematics and Physics at the \textit{lycée Henri Poincaré} of Nancy.} 
+\textbf{2004-2006}  & \trad{\textit{Classes préparatoires} of Mathematics and Physics} % at the \textit{lycée Henri Poincaré} of Nancy. 
                         {Classes préparatoires au lycée Henri Poincaré à Nancy.} \\ % Mathématiques Supérieures et Mathématiques Spéciales
 
 \espace
@@ -135,8 +138,8 @@
 %###################
 
 \begin{tabular}{cp{0.8\textwidth}}
-\textbf{2009-2010}							& \trad{Engineer and designer at \textit{Dassault Systèmes}:}{Ingénieur-Designer chez \textit{Dassault Systèmes} :}\\
-                                        & \trad{Development of an innovative social platform. -- 1 year}{Développement d'une plateforme innovante de web social  -- 1 an} \\
+\textbf{2009-2010}						& \trad{Engineer and designer at \textit{Dassault Systèmes}:}{Ingénieur-Designer chez \textit{Dassault Systèmes} :}\\
+                                        & \trad{Front-end developer for an innovative social platform. -- 1 year}{Développement front-end d'une plateforme innovante de web social  -- 1 an} \\
 \espace
 \textbf{2009} 							& \trad{End-Of-Course Work at \textit{Dassault Systèmes} (France):}{Travail de Fin d'\'Etude en recherche technologique chez \textit{Dassault Systèmes} :}\\
                                         & \trad{Interactive painting and sculpting on 3D models -- 6 months}{Développement d'une méthode novatrice de peinture et d'ajout de détails sur modèles 3D -- 6 mois} \\
@@ -144,13 +147,13 @@
 \textbf{2008-2009} 						& \trad{Software developer working remotely for \textit{Creative Commons}}{Développeur pour \textit{Creative Commons} (travail à distance)} \\
 \espace
 \textbf{\trad{summer 2008}{été 2008}} 	& \trad{Internship at \textit{Creative Commons} (San Francisco, United States):}{Stage d’application chez \textit{Creative Commons} (San Francisco, \'Etats Unis) :} \\
-                                        & \trad{TODO Web development semantic and application prototyping -- 10 weeks}{Développement dans le domaine du web sémantique -- 10 semaines} \\
+                                        & \trad{Semantic web software development -- 10 weeks}{Développement dans le domaine du web sémantique -- 10 semaines} \\
 \espace
 \textbf{2008}	                        & \trad{Developer of \textit{Inkscape}, an open source scalable vector graphics editor} {Participation au développement d'\textit{Inkscape}, logiciel libre de dessin vectoriel }\\
 %\espace
 %\textbf{\trad{july 2007}{juillet 2007}} & \trad{Internship in a team of workers at \textit{Solvay Carbonate France} -- 1 month.}{Stage d’exécution dans une équipe d'ouvriers à \textit{Solvay Carbonate France} -- 1 mois.} \\ %mise en place d’un outil de formation d'un procédé de fabrication.
 %\espace
-%\textbf{2006-2007} 						& \trad{employee of the \textit{Junior Entreprise} : designing and making dynamic websites.}{réalisateur à la Junior Entreprise de l’École Centrale de Lyon : Conception et réalisation de sites internet dynamiques.} \\
+%\textbf{2006-2007} 					& \trad{employee of the \textit{Junior Entreprise} : designing and making dynamic websites.}{réalisateur à la Junior Entreprise de l’École Centrale de Lyon : Conception et réalisation de sites internet dynamiques.} \\
 \end{tabular}
 
 
@@ -161,17 +164,21 @@
 \item \textbf{\trad{Languages}{Langues}}
 	\begin{itemize} 
 	\trad{\item \textbf{French}, mother tongue}{}
-	\item \trad{\textbf{English}, fluent (C1 in the Common European Framework, TOEFL : 603/670)}{\textbf{Anglais}, autonome (niveau C1 du cadre européen de référence, TOEFL : 603/670)}
-	\item \trad{\textbf{Spanish}, intermediate (6 years of study)}{\textbf{Espagnol}, niveau intermédiaire (6 années d'études)}
-	\item \trad{\textbf{Italian}, intermediate (2 years of study)}{\textbf{Italien}, niveau intermédiaire (2 années d'études)}
+	\item \trad{\textbf{English}, fluent (C1 in the Common European Framework, TOEFL : 603/670)}
+				{\textbf{Anglais}, autonome (niveau C1 du cadre européen de référence, TOEFL : 603/670)}
+	\item \trad{\textbf{Spanish}, intermediate (6 years of study)}
+				{\textbf{Espagnol}, niveau intermédiaire (6 années d'études)}
+	\item \trad{\textbf{Italian}, intermediate (2 years of study)}
+				{\textbf{Italien}, niveau intermédiaire (2 années d'études)}
 	\end{itemize}
 \item \textbf{\trad{Computer}{Informatique}}
 	\begin{itemize}
 	\item \trad{Knowledge of the main office and professional digital art software}             {Maîtrise des principaux outils de bureautique et d'infographie professionnelle}
-	\item \trad{Knowledge of programming languages HTML, PHP, Javascript, Java, C++ and Python}            {Expérimenté dans les languages HTML, PHP, Javascript, Java, C++ et Python}
+	\item \trad{Web programming: HTML, CSS, SVG, Javascript, Java, SQL}							{Programmation web: HTML, CSS, SVG, Javascript, Java, SQL}
+	\item \trad{C++ (dektop applications, real time 3D)}										{C++ (applications de bureau, 3D temps réel)}
+	\item \trad{Linux server and desktop}                                                        {Utilisation quotidienne d'environnements Linux et administration de serveurs Linux}
 %	\item \trad{Familiar with SVN and Git version control system}                               {Familier avec l'utilisation des systèmes de gestion de versions SVN et Git}
-	\item \trad{Everyday use of Linux}                                                          {Utilisation quotidienne d'environnements Linux}
-    \item \trad{TODO}                                                                           {Expérience dans l'utilisation de moteurs de rendu temps réel et moteurs physiques}
+%   \item \trad{use of real-time rendering and physics engines}                                 {Expérience dans l'utilisation de moteurs de rendu temps réel et moteurs physiques}
 %	\item \trad{Use of \textit{CATIA} and \textit{Matlab} for the design and regulation of an UAV}{Utilisation des logiciels \textit{CATIA} et \textit{Matlab} dans le cadre d'un projet d'étude}
 	\end{itemize}
 \end{itemize}
@@ -190,7 +197,7 @@
 	%\item \trad{Associational life : active member of the student association of the school}					{Vie associative : membre actif de l'association des élèves de l'école}
 	%\item \trad{Regular practice of fencing and diving}                         								{Pratique régulière de l'escrime et de la plongée sous-marine}
 	\item \trad{Developer of mobile applications for the \textit{Android} OS}  									{Développement d'applications pour mobiles \textit{Android}}
-	\item \trad{TODOweb 3d et image}  																			{Suivi de l'actualité des domaines du web et de l'image de synthèse.} 
+	%\item \trad{TODO Web 3d et image}	  																		{Suivi de l'actualité des domaines du web et de l'image de synthèse} 
 	\end{itemize}
 
 %\item \textbf{\trad{AFPS:}{AFPS:}} \trad{certificate of first aids training.}{diplomé de l'Attestation de Formation aux Premiers Secours.}
