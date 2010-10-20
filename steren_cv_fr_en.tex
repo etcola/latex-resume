@@ -13,7 +13,7 @@
 %#########
 
 \trad{
-	\usepackage[english]{babel}
+	\usepackage[english]{babel}    % anglais
 }{
 	\usepackage[francais]{babel}    % faire du français
 }
@@ -62,6 +62,15 @@
 	\end{center}
 	%\medskp
 	}
+
+% new itemize environment with itemsep parameter
+\newenvironment{customitemize}[0]
+  { \begin{itemize}
+    % set spacing between items
+    \addtolength{\itemsep}{\trad{-0.2}{0}\baselineskip}
+    % set spacing between lines
+    \addtolength{\baselineskip}{\trad{-0.2}{0}\baselineskip} }
+  { \end{itemize} }
 
 
 %###################
@@ -160,28 +169,31 @@
 \titre{\trad{Competences}{Compétences}}
 %#########################
 
-\begin{itemize}
+\begin{customitemize}
 \item \textbf{\trad{Languages}{Langues}}
 	\begin{itemize} 
 	\trad{\item \textbf{French}, mother tongue}{}
-	\item \trad{\textbf{English}, fluent (C1 in the Common European Framework, TOEFL : 603/670)}
-				{\textbf{Anglais}, autonome (niveau C1 du cadre européen de référence, TOEFL : 603/670)}
-	\item \trad{\textbf{Spanish}, intermediate (6 years of study)}
-				{\textbf{Espagnol}, niveau intermédiaire (6 années d'études)}
-	\item \trad{\textbf{Italian}, intermediate (2 years of study)}
-				{\textbf{Italien}, niveau intermédiaire (2 années d'études)}
+	\item \trad{\textbf{English}, fluent} %(C1 in the Common European Framework, TOEFL : 603/670)
+				{\textbf{Anglais}, autonome} %(niveau C1 du cadre européen de référence, TOEFL : 603/670)
+	\item \trad{\textbf{Spanish}, intermediate (6 years) and \textbf{Italian}, intermediate (2 years)}
+				{\textbf{Espagnol}, niveau intermédiaire (6 années d'études) et \textbf{Italien}, niveau intermédiaire (2 années d'études)}
+%	\item \trad{\textbf{Spanish}, intermediate (6 years of study)}
+%				{\textbf{Espagnol}, niveau intermédiaire (6 années d'études)}
+%	\item \trad{\textbf{Italian}, intermediate (2 years of study)}
+%				{\textbf{Italien}, niveau intermédiaire (2 années d'études)}
 	\end{itemize}
 \item \textbf{\trad{Computer}{Informatique}}
 	\begin{itemize}
 	\item \trad{Knowledge of the main office and professional digital art software}             {Maîtrise des principaux outils de bureautique et d'infographie professionnelle}
-	\item \trad{Web programming: HTML, CSS, SVG, Javascript, Java, SQL}							{Programmation web: HTML, CSS, SVG, Javascript, Java, SQL}
-	\item \trad{C++ (dektop applications, real time 3D)}										{C++ (applications de bureau, 3D temps réel)}
-	\item \trad{Linux server and desktop}                                                        {Utilisation quotidienne d'environnements Linux et administration de serveurs Linux}
+	\item \trad{Web: HTML, CSS, SVG, Javascript, Java, SQL}										{Programmation web : HTML, CSS, SVG, Javascript, Java, SQL}
+	\item \trad{Dektop applications and real time 3D: C++}										{C++ (applications de bureau, 3D temps réel)}
+	\item \trad{Mobile: \textit{Android}}									  					{Programmation mobile : \textit{Android}}
+	\item \trad{Linux server and desktop}                                                       {Utilisation quotidienne d'environnements Linux et administration de serveurs Linux}
 %	\item \trad{Familiar with SVN and Git version control system}                               {Familier avec l'utilisation des systèmes de gestion de versions SVN et Git}
 %   \item \trad{use of real-time rendering and physics engines}                                 {Expérience dans l'utilisation de moteurs de rendu temps réel et moteurs physiques}
 %	\item \trad{Use of \textit{CATIA} and \textit{Matlab} for the design and regulation of an UAV}{Utilisation des logiciels \textit{CATIA} et \textit{Matlab} dans le cadre d'un projet d'étude}
 	\end{itemize}
-\end{itemize}
+\end{customitemize}
 
 \titre{\trad{Interests}{Centres d'Intérêts}}
 %###################
@@ -191,14 +203,13 @@
 %\item \textbf{Permis B :} Titulaire du permis B depuis plus de 2 ans.
 %\item
     %\textbf{\trad{Spare-time activities}{Loisirs}} 
-	\begin{itemize}
+	\begin{customitemize}
 	\item \trad{Member of an improvisational theater company}                   								{Membre d'une troupe d'improvisation théatrale}
 	\item \trad{Direction of short films (traditional or computer generated) and other graphical creations}   	{Réalisation de courts métrages et autres créations graphiques} %(traditionnels ou en images de synthèse)
-	%\item \trad{Associational life : active member of the student association of the school}					{Vie associative : membre actif de l'association des élèves de l'école}
-	%\item \trad{Regular practice of fencing and diving}                         								{Pratique régulière de l'escrime et de la plongée sous-marine}
-	\item \trad{Developer of mobile applications for the \textit{Android} OS}  									{Développement d'applications pour mobiles \textit{Android}}
-	%\item \trad{TODO Web 3d et image}	  																		{Suivi de l'actualité des domaines du web et de l'image de synthèse} 
-	\end{itemize}
+%	\item \trad{Associational life : active member of the student association of the school}					{Vie associative : membre actif de l'association des élèves de l'école}
+	\item \trad{Regular practice of rock climbing and scuba diving}                         				{Pratique régulière de l'escalade et de la plongée sous-marine}
+%	\item \trad{TODO Web 3d et image}	  																		{Suivi de l'actualité des domaines du web et de l'image de synthèse} 
+	\end{customitemize}
 
 %\item \textbf{\trad{AFPS:}{AFPS:}} \trad{certificate of first aids training.}{diplomé de l'Attestation de Formation aux Premiers Secours.}
 	
